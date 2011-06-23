@@ -1,0 +1,3 @@
+A git clone of autosync4mac from http://code.google.com/p/autosync4mac/
+
+A very hacky attempt by me to try and get bi-directional syncing working (using rsync)
