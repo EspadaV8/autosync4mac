@@ -1,3 +1,22 @@
 A git clone of autosync4mac from http://code.google.com/p/autosync4mac/
 
 A very hacky attempt by me to try and get bi-directional syncing working (using rsync)
+
+
+To get this working in OS X I needed to install the following;
+
+Gems:
+	net-ssh
+	net-scp
+	ruby-growl
+	fsevents
+
+RubyCocoa:
+	wget http://transact.dl.sourceforge.net/project/rubycocoa/RubyCocoa/1.0.1/RubyCocoa-1.0.1.tar.gz
+	tar xf RubyCocoa-1.0.1.tar.gz
+	cd RubyCocoa-1.0.1
+	ARCHFLAGS='-arch i386 -arch x86_64'
+	ruby install.rb config
+	ruby install.rb setup
+	sudo ruby install.rb install
+
